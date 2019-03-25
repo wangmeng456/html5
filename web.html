@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #big{
+            width: 340px;
+        }
+        #left{
+            width: 300px;
+            height: 60px;
+            float: left;
+        }
+        #right{
+            width: 20px;
+            height: 20px;
+            margin-top: 50px;
+            float: left;
+            margin-left: 10px;
+        }
+        .msg{
+            width: 300px;
+        }
+        .a1{
+            background-color: darkgray;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div id="big">
+            <div id="left">
+                <input type="search" placeholder="请输入想查找的商品" name="search1" autocomplete="on" autofocus="autofocus" id="memo" />
+                <input type="button" value="搜索" style="width:100px" onclick="saveStorage()" />
+                <br/>
+                <a>最近搜索</a>
+            </div>
+            <div id="right">
+                <input type="button" value="X" onclick="clearStorage()" />
+            </div>
+        </div>
+    </form>
+    <div id="msg" class="msg"></div>
+</body>
+<script type="text/javascript">
+    window.onload = function(){
+        loadStorage();
+    }
+    function saveStorage() {
+        var data = document.getElementById('memo').value;
+        var time = new Date().getTime();
+        if(data==""){
+            alert("你未输入搜索内容");
+        }
+        else{
+            for(var i = localStorage.length-1; i>=0; i--){
+                var key = localStorage.key(i);
+                var value = localStorage.getItem(key);
+                if(data == value){
+                    localStorage.removeItem(key);
+                }
+            }
+            localStorage.setItem(time,data);
+            loadStorage();
+        }
+    }
+    function clearStorage() {
+        localStorage.clear();
+       
+        clearOne();
+    }
+    function loadStorage() {
+        clearOne();
+        var target = document.getElementById('msg');
+        for (var i = localStorage.length-1; i >= 0; i--) {
+            var key = localStorage.key(i);
+            var value = localStorage.getItem(key);
+            var a = document.createElement("a");
+            a.className = "a1";
+            a.innerHTML = value;
+            target.appendChild(a);
+        }
+    }
+    function clearOne() {
+        var target = document.getElementById('msg');
+        if(target.hasChildNodes()){
+            var length = target.childNodes.length;
+            for(var i = 0; i < length; i++){
+                target.removeChild(target.lastChild);
+            }
+        }
+    }
+</script>
+</html>
