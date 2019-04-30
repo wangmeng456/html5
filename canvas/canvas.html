@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>canvas</title>
+    <style>
+        #box{
+            width: 500px;
+            height: 500px;
+			position: absolute;
+			z-index: -1px;
+        }
+		#myCanvas{
+			position: absolute;
+			z-index: 1px;
+		}
+    </style>
+</head>
+<body>
+	<div id="box"></div>
+	<canvas id="myCanvas" width="500" height="500"></canvas>
+</body>
+<script>
+	var background = new Array(1);
+	background[0] = 'url(img/haha.png)';
+	background[1] = 'url(img/hahaha.png)';
+	var index = Math.floor(Math.random()*background.length);
+	box.style.background = background[index] + "no-repeat center";
+	box.style.backgroundSize = "300px 300px";
+
+	var c = document.getElementById("myCanvas");
+	var context = c.getContext("2d");
+
+	var width = c.offsetWidth;
+	var height = c.offsetHeight;
+
+	context.beginPath();
+	context.fillStyle = "#939393";
+	context.fillRect(0, 0, width, height);
+
+	c.onclick = function() {
+		var x = event.clientX;
+        var y = event.clientY;
+
+        context.globalCompositeOperation = "destination-out";
+        context.beginPath();
+        context.arc(x,y,40,0,Math.PI*2);
+        context.fill();
+		clearPercent();
+	}
+
+	c.onmousedown = function() {
+		c.onmousemove = function() {
+			var x = event.clientX;
+            var y = event.clientY;
+
+            context.globalCompositeOperation = "destination-out";
+            context.beginPath();
+            context.arc(x,y,40,0,Math.PI*2);
+            context.fill();
+			clearPercent();
+		}
+	}
+
+	function clearPercent(){
+        var imgData1 = context.getImageData(0, 0, width, height);
+		var imgData2 = imgData1.data;
+        var data = 0;
+    
+        for(var i = 0; i < imgData2.length; i += 4){
+            if(imgData2[i+3] == 0){
+                data++;
+            }
+        }
+		var data2 = data/(imgData2.length/4);
+        if(data2 >= 0.85){
+            context.clearRect(0, 0, width, height);
+        }
+
+    }
+
+	c.onmouseup=function(){
+        c.onmousemove = function(){
+
+        }
+    }
+
+</script>
+</html>
