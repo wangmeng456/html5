@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+    }
+    body{
+        padding: 50px;
+    }
+    .box{
+        width: 450px;
+        height: 500px;
+        position: relative;
+        border-color: rgba(37, 37, 37, 0.137);
+        border-style: solid;
+        border-width: 5px 5px 5px 5px;
+        overflow: hidden;
+    }
+    .img{
+        width: 450px;
+        height: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.6s;
+        overflow: hidden;
+    }
+    .img1{
+        width: 450px;
+        height: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 6;
+        background-color: black;
+        overflow: hidden;
+        box-shadow: 0px 0px 30px gray out;
+    }
+    .yuan{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: orange;
+        color: #ffffff;
+        text-align: center;
+        margin-left: 380px;
+        margin-top: 20px;
+        position: absolute;
+        z-index: 10;
+    }
+    .zhanqiao{
+        width: 450px;
+        height: 180px;
+        position: absolute;
+        top: 280px;
+        z-index: 10;
+    }
+    .tupian{
+        width: 50px;
+        height: 20px;
+        background-color: orange;
+        color: #ffffff;
+        text-align: center;
+        
+    }
+    .biaoti{
+        padding: 25px 20px;
+        line-height: 40px;
+        background: #fff;
+    }
+    .zhengwen{
+        padding: 10px 20px;
+        opacity: 0;
+        background: #fff;
+
+    }
+    .zhanqiao1{
+        width: 450px;
+        height: 20px;
+        position: absolute;
+        top: 480px;
+        font-size: 14px;
+        color: rgba(56, 56, 55, 0.678);
+    }
+    .zhanqiao1 a{
+        padding-left: 30px;
+    }
+    .box:hover{
+        border-color: rgba(0, 0, 0, 0.473);
+        transition: border-color 1s ease-in-out;
+    }
+    .box:hover .img{
+        transform: scale(1.2);
+        transition: transform 1s ease-in-out;
+    }
+    @keyframes zhao{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0.6;
+            background-color: rgba(22, 21, 21, 0.61);
+        }
+    }
+    .box:hover .img1{
+        animation: zhao 1s 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .box:hover .zhanqiao{
+        transform: translateY(-100px);
+        transition: transform 1s ease-in-out;
+    }
+    .box:hover .zhengwen{
+        opacity: 1;
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="img1"></div>
+        <img src="zhanqiao.jpg" alt="" class="img"/>
+        <div class="yuan">
+            <p>15</p>
+            <p>五月</p>
+        </div>
+        <div class="zhanqiao">
+            <div class="tupian">
+                照片
+            </div>
+            <div class="biaoti">
+                <h2>青岛栈桥</h2>
+                <span style="color: orange; font-size: 16px">国家AAAA级旅游景区<span>
+            </div>
+            <div class="zhengwen">
+                青岛栈桥是青岛海滨风景区的景点之一，是国务院于1982年首批公布的国家级风景名胜区，也是首批国家AAAA级旅游景区。青岛栈桥位于游人如织的青岛中山路南端，桥身从海岸探入如弯月般的青岛湾深处。桥身供游人参观并在此停靠旅游船，由此乘船可看海上青岛。
+            </div>
+        </div>
+        <div class="zhanqiao1">
+            <a>10分钟前</a>
+            <a>123评论</a>
+        </div>
+    </div>
+</body>
+</html>
