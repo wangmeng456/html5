@@ -3,56 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>yinghuayiyou</title>
     <style>
-        *{
+         *{
             margin: 0 auto;
             padding: 0;
         }
-        #join{
-            width: 100%;
-            height: 45px;
-            border-top: 1px solid white;
-            background-color: black;
+        ul li{
+            list-style: none;
         }
-        #join1{
-            width: 1200px;
-            height: 45px;
-            text-align: right;
-            line-height: 45px;
-            font-size: 14px;
-            color: white;
-            text-decoration: none;
+        @media screen and (max-width:749px) {
+            #containera{
+                display: none;
+            }
+            #firstimg{
+                height: 300px;
+                width: 100%;
+            }
+            #secondimg{
+                height: 300px;
+                width: 100%;
+            }
+            #nav1{
+                margin-top: 0px;
+            }
+            #leftbiao{
+                line-height: 300px;
+                height: 300px;
+            }
+            #rightbiao{
+                line-height: 300px;
+                height: 300px;
+            }
+            #generic{
+                margin-top: 60px;
+            }
+        }
+        @media screen and (max-width:1199px) and (min-width: 750px) {
+            #firstimg{
+                height: 350px;
+                width: 100%;
+            }
+            #secondimg{
+                height: 350px;
+                width: 100%;
+            }
+            #leftbiao{
+                line-height: 350px;
+                height: 350px;
+            }
+            #rightbiao{
+                line-height: 300px;
+                height: 300px;
+            }
+            #generic{
+                margin-top: 60px;
+            }
+        }
+        @media screen and (min-width:1200px) {
+            #nav1{
+                margin-top: 30px;
+            }
+            #firstimg{
+                height: 446px;
+                width: 100%;
+            }
+            #secondimg{
+                height: 446px;
+                width: 100%;
+            }
+            #leftbiao{
+                line-height: 446px;
+                height: 446px;
+            }
+            #rightbiao{
+                line-height: 446px;
+                height: 446px;
+            }
+            #generic{
+                margin-top: 90px;
+            }
+        }
+        #containera1{
+            height: 30px;
+        }
+        .navbar-default .navbar-nav>li>a {
+            color: #000
+        }
+        .navbar-default .navbar-nav>.disabled>a,
+        .navbar-default .navbar-nav>.disabled>a:focus,
+        .navbar-default .navbar-nav>.disabled>a:hover {
+            color: #000;
+            background-color: none;
+        }
+        .navbar-default .navbar-nav>li>a:focus,
+        .navbar-default .navbar-nav>li>a:hover {
+            color: rgb(235, 82, 35);
+            background-color: none;
+            border-bottom: 3px solid rgb(235, 82, 35)
+        }
+        .navbar-default .navbar-nav>.active>a,
+        .navbar-default .navbar-nav>.active>a:focus,
+        .navbar-default .navbar-nav>.active>a:hover {
+            color: rgb(235, 82, 35);
+            background: none;
+            border-bottom: 3px solid rgb(235, 82, 35)
+        }
+        #xianlu{
+            height: 1155px;
+            width: 100%;
+        }
+        #qianzheng{
+            height: 1330px;
+            width: 100%;
+        }
+        #shiming{
+            width: 100%;
+            height: 1495px;
+        }
+        #zuizhong{
+            width: 100%;
+            height: 528px;
+            background-color: #000;
+        }
+        .carousel-caption{
+            top: 5%;
+            left: 13%;
+            right: auto;
+            bottom: auto;
+        }
+        #sousuo{
+            width: 582px;
+            height: 52px;
+            border: 2px solid #000;
+            background-color: #fff;
+            top: 50%;
+            left: 50%;
         }
     </style>
 </head>
-<body>
-    <div id="join">
-        <div id="join1">
-            <img src="img/tell.png" alt="" />
-            &nbsp;
-            400-808-8682
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#" style="text-decoration: none; color: white; font-size: 14px">请登录</a>
-            &nbsp;
-            |
-            &nbsp;
-            <a href="#" style="text-decoration: none; color: white; font-size: 14px">注册</a>
+<body data-spy="scroll" data-target="#nav-example">
+    <div id="containera" style="width: 100%; border-top: 1px solid white; background-color: black; height: 30px;position:fixed; z-index: 999;">
+        <div id="containera1">
+                <a href="#" id="shang" style="margin-right: 60px; text-decoration: none; color: white; font-size: 14px; line-height: 30px; float: right;">
+                    400-808-8682
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    请登录
+                    &nbsp;
+                    |
+                    &nbsp;
+                    注册
+                </a>
+                <img src="img/tell.png" alt="" style="margin-right:10px; float: right" />
         </div>
+    </div> 
+    <div class="container" style="width: 100%; padding-left: 0px; padding-right: 0px">
+        <nav id="nav1" class="navbar navbar-default navbar-fixed-top" style="background-color: #fff; border-color:#fff;"> 
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#col-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a style="margin-right: 30px; margin-left: 50px"><img src="img/logo.png" alt="" style="padding-top:5px;"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="col-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active" style="font-size: 16px; margin-left: 30px; border-bottom: 3px solid inherit;"><a href="#generic">首页</a></li>
+                        <li style="font-size: 16px; margin-left: 30px; border-bottom: 3px solid inherit;"><a href="#xianlu">热门路线</a></li>
+                        <li style="font-size: 16px; margin-left: 30px; border-bottom: 3px solid inherit;"><a href="#qianzheng">签证推荐</a></li>
+                        <li style="font-size: 16px; margin-left: 30px; border-bottom: 3px solid inherit;"><a href="#shiming">使命愿景</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+        <div id="generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img alt="First slide" src="img/banner.jpg" id="firstimg">
+                    <div class="carousel-caption">
+                        <h2 style="color: #e0e0e0">悠游古欧洲 游遍德法瑞意</h2>
+                        <p style="border-top: 1px solid #716e6c; padding-top: 10px; color: #c2c0c2">巴黎卢浮宫、塞纳河游船、凡尔赛宫</p>
+                        <p style="border-bottom: 1px solid #716e6c; padding-bottom: 10px; color: #c2c0c2">少女峰、大运河游船、金色列车、西庸城堡</p>
+                    </div>
+                    <div id="sousuo">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img alt="Second slide" src="img/banner2.jpg" id="secondimg">
+                    <div class="carousel-caption">
+                        <h2 style="color: rgba(255, 255, 255, 0.945)">悠游古欧洲 游遍德法瑞意</h2>
+                        <p style="border-top: 1px solid #b4b4b5; padding-top: 10px; color: #e0e0e0">巴黎卢浮宫、塞纳河游船、凡尔赛宫</p>
+                        <p style="border-bottom: 1px solid #b4b4b5; padding-bottom: 10px; color: #e0e0e0">少女峰、大运河游船、金色列车、西庸城堡</p>
+                        <div id="sousuo">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#generic" data-slide="prev" id="leftbiao" style=" text-align: left">
+                <img src="img/left.png" alt="">
+            </a>
+            <a class="right carousel-control" href="#generic" data-slide="next" id="rightbiao" style=" text-align: right">
+                <img src="img/right.png" alt="">
+            </a>
+        </div>
+        <div id="xianlu"></div>
+        <div id="qianzheng"></div>
+        <div id="shiming"></div>
     </div>
-    <div id="daohang"></div>
-    <div id="lunbo"></div>
-    <div id="cheliang"></div>
-    <div id="xianlu"></div>
-    <div id="tuone"></div>
-    <div id="qianzheng"></div>
-    <div id="tutwo"></div>
-    <div id="santu"></div>
-    <div id="shiming"></div>
-    <div id="tuthree"></div>
-    <div id="xunzhang"></div>
-    <div id="huoban"></div>
     <div id="zuizhong"></div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
