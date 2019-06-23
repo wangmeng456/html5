@@ -23,11 +23,11 @@
             top:0;
         }
         #su{
-            width: 100px;
+            width: 22%;
             height: 40px;
             background: #cb5405;
             color: #fff;
-            font-size: 18px;
+            font-size: 14px;
             text-align: center;
             border: 0;
             border-radius: 8px;
@@ -674,17 +674,19 @@
             }
             #xianlu{
                 width: 100%;
-                height: 900px;
+                /* height: 900px; */
+                
             }
             #xianlu2{
-                height:970px;
+                /* height:970px; */
                 width: 100%;
                 background-color: #fff;
+                padding-bottom: 10%;
             }
             #line2{
                 width: 95%;
                 margin: 0 auto;
-                height: 970px;
+                /* height: 970px; */
             }
             .line-left0{
                 position: relative;
@@ -693,24 +695,26 @@
             }
             .line-left0 img{
                 width: 100%;
-                height: 390px;
+                height: 50%;
+                overflow: hidden;
             }
             .line-left0 div{
                 padding-top: 23px;
                 padding-left: 15px;
                 padding-right: 25px;
                 position: absolute;
-                height: 115px;
+                height: 40%;
                 width: 100%;
                 left: 0;
                 bottom: 0;
-                font-size: 24px;
+                font-size: 100%;
                 background: #000;
                 color: #fff;
-                opacity: 0.8;  
+                opacity: 0.8;
+                overflow: hidden;
             }
             .line-left0 div span{
-                font-size: 38px;
+                font-size: 100%;
             }
             .line-left01{
                 width: 320px;
@@ -726,7 +730,7 @@
                 margin: 0 auto;
             }
             .line-left1 button{
-                font-size: 28px;
+                font-size: 26px;
                 color: #666666;
                 background: #fff;
                 width: 230px;
@@ -771,7 +775,7 @@
                 margin: 0;
             }
             #reco21 div{
-                height:70px;
+                height:10%;
             }
             .reco23{
                 position: relative;
@@ -781,14 +785,14 @@
             .reco23 div{
                 position: absolute;
                 bottom: 0;
-                height: 45px;
+                height: 25%;
                 width: 100%;
                 opacity: 0.5;
                 color: #fff;
                 background: #000;
                 text-align: center;
-                line-height: 45px;
-                font-size: 20px;
+                line-height: 80px;
+                font-size: 16px;
             }
             .reco3 button{
                 color: #000;
@@ -808,8 +812,8 @@
             color: #fff;
             background: #000;
             text-align: center;
-            line-height: 45px;
-            font-size: 20px;
+            line-height: 70px;
+            font-size: 16px;
         }
         .reco22{
             position: relative;
@@ -819,25 +823,25 @@
         .reco22 div{
             position: absolute;
             bottom: 0;
-            height: 45px;
+            height: 25%;
             width: 100%;
             opacity: 0.5;
             color: #fff;
             background: #000;
             text-align: center;
-            line-height: 45px;
-            font-size: 20px;
+            line-height: 80px;
+            font-size: 16px;
         }
         .font9{
-            font-size: 30px;
+            font-size: 100%;
         }
         .reco3{
-            width: 30%;
+            width: 60%;
             padding-top: 30px;
             margin: 0 auto;
         }
         .reco3 button{
-            font-size: 26px;
+            font-size: 20px;
             width: 100%;
             height: 60px;
             border-radius: 10px;
@@ -845,8 +849,8 @@
         @media screen and (max-width:749px){
             #qianzheng{
                 width: 100%;
-                height: 560px;
-                margin-top: 100px;
+                /* height: 560px; */
+                /* margin-top: 100px; */
             }
             .qianzheng3{
                 display: none;
@@ -866,7 +870,7 @@
             }
             #qianzheng2{
                 width: 100%;
-                height: 570px;
+                /* height: 570px; */
                 background-color: #fff;
                 margin: 0 auto;
                 padding-top: 15px;
@@ -882,7 +886,7 @@
                 padding: 0;
             }
             #reco21 div{
-                height: 50px;
+                height: 30%;
             }
             #reco21 img{
                 width: 100%;
@@ -901,13 +905,37 @@
             .font10{
                 display: none;
             }
+            .reco22 div{
+                position: absolute;
+                bottom: 0;
+                height: 25%;
+                width: 100%;
+                opacity: 0.5;
+                color: #fff;
+                background: #000;
+                text-align: center;
+                line-height: 200%;
+                font-size: 14px;
+            }
+            #reco21 div{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                opacity: 0.5;
+                color: #fff;
+                background: #000;
+                text-align: center;
+                line-height: 70px;
+                font-size: 14px;
+                height: 30%;
+            }
         }
         @media screen and (max-width:749px){
             #shiming{
                 width: 100%;
                 /* height: 1830px; */
                 background-image: url(img/back.png);
-                background-size:100% 700px;
+                background-size:100% 100%;
                 background-repeat: no-repeat;
             }
             #shimings1{
@@ -925,7 +953,7 @@
             }
             .shiming2{
                 width: 100%;
-                height: 100px;
+                height: 250px;
             }
             .shiming211{
                 color: #000;
@@ -1116,7 +1144,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" id="su" >快速定制</button>
-                    <a style="margin-right: 30px; margin-left: 50px"><img src="img/logo.png" alt="" style="padding-top:5px;"></a>
+                    <a style="margin-right: 15px; margin-left: 5px"><img src="img/logo.png" alt="" style="padding-top:5px;"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="col-1">
                     <ul class="nav navbar-nav">
@@ -1332,11 +1360,11 @@
                     <p>让旅游回归本质，体验纯粹旅游</p>
                 </div>
                 <div id="shimings1">
-                    <h3>
+                    <h4>
                         <span style="color: #e8420a">|</span>
                         使命与愿景
                         <span style="font-size:14px">：让旅游回归本质，体验纯粹旅游</span>
-                    </h3>
+                    </h4>
                 </div>
                 <div class="shiming2">
                     <div class="container">
@@ -1377,8 +1405,8 @@
                                     <img src="img/icon1.png"/>
                                     <p>品质行程</p>
                                 </div>
-                                <p style="margin-left: 10%;color: #18366e;">旅游达人精心设计，基于口碑反复打磨，</p>
-                                <p style="margin-left: 20%; color: #18366e;">全网最好，敢跟任何产品比</p>
+                                <p style="margin-left: 10%;">旅游达人精心设计，基于口碑反复打磨，</p>
+                                <p style="margin-left: 20%;">全网最好，敢跟任何产品比</p>
                             </div>
                             <div class="blue11">
                                 <div class="blue1s">
