@@ -22,6 +22,16 @@
             z-index: 1030;
             top:0;
         }
+        #su{
+            width: 100px;
+            height: 40px;
+            background: #cb5405;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            border: 0;
+            border-radius: 8px;
+        }
         @media screen and (max-width:749px) {
             .navbar-fixed-top {
                 top: 0px;
@@ -433,7 +443,7 @@
             .hou{
                 background-color: #ddd;
                 width: 100%;
-                height: 4400px;
+                /* height: 4400px; */
                 margin: 0 auto;
                 margin-top: 0px;
             }
@@ -493,65 +503,12 @@
             .jichang{
                 display: block;
             }
-            #xianlu{
-                width:100%;
-                height: 1128px;
-            }
-            .xianlu1{
-                width: 100%;
-                height: 100px;
-                color: #000;
-                font-size: 80%;
-                text-align: center;
-                margin-top: 10%;
-            }
-            .xianlu2{
-                width: 100%;
-                height: 1024px;
-                background-color: #e8420a;
-            }
-            #xianlu{
-                display: block;
-            }
-            #xianlus{
-                display: none;
-            }
-            #qianzheng{
-                width: 100%;
-                height: 1330px;
-                display: block;
-            }
-            .qianzheng1{
-                width: 100%;
-                height: 100px;
-                color: #000;
-                font-size: 80%;
-                text-align: center;
-            }
-            #qianzhengs{
-                display: none;
-            }
-
-            #shiming{
-                width: 100%;
-                height: 1496px;
-            }
-            .shiming1{
-                width: 100%;
-                height: 266px;
-                color: #000;
-                font-size: 80%;
-                text-align: center;
-            }
-            #shimings{
-                display: none;
-            }
         }
         @media screen and (max-width:749px){
             .hou{
                 background-color: #ddd;
                 width: 100%;
-                height: 3800px;
+                /* height: 3800px; */
                 margin: 0 auto;
                 margin-top: 0px;
             }
@@ -612,77 +569,525 @@
                 border-radius: 10px;
                 font-size: 14px;
             }
-            #xianlus{
+        }
+        @media screen and (min-width:749px){
+            #xianlu{
+                width:100%;
+                height: 1128px;
+            }
+            #xianlu1{
                 width: 100%;
-                background-color: #fff;
-                height: 1068px;
-                margin-top: 10px;
+                height: 100px;
+                color: #000;
+                font-size: 80%;
+                text-align: center;
+                margin-top: 10%;
+                display: block;
             }
-            .xianluss{
-                width: 85%;
-                height: 1068px;
+            #xianlus1{
+                display: none;
             }
-            .xianlus1{
-                width: 85%;
+            #xianlu2{
+                width: 100%;
+                height: 1040px;
+                margin: 0 auto;
+                padding: 0;
+                margin: 0;
+            }
+            #line2{
+                width: 100%;
+                height: 1040px;
+                margin: 0 auto;
+            }
+            #line-left{
+                height: 1040px;
+                padding: 0;
+                margin: 0;
+                width: 50%;
+            }
+            .line-left0{
+                border-bottom: 4px solid #dddddd;
+                overflow: hidden;
+                padding-right: 10px;
+                width: 100%;
+            }
+            .line-left0 img{
+                overflow: hidden;
+                width: 100%;
+            }
+            .line-left0 div{
+                height: 117px;
+                background: #000;
+                color: #fff;
+                padding-left: 35px;
+                padding-top: 16px;
+                font-size: 20px;
+            }
+            .line-left0 div span{
+                font-size: 30px;
+            }
+            .line-left1{
+                display: none;
+            }
+            #line-right{
+                height: 1040px;
+                float: right;
+                padding: 0;
+                margin: 0;
+                width: 50%;
+            }
+            .line-right0{
+                position: relative;
+                border-bottom: 4px solid #dddddd;
+                overflow: hidden;
+            }
+            .line-right0 div{
+                width: 610px;
+                height: 88px;
+                left: 0;
+                bottom: 0;
+                position: absolute;
+                background-color: #000;
+                opacity: 0.5;
+                padding-left: 35px;
+                padding-top: 10px;
+                font-size: 20px;
+                color: #fff;
+            }
+            .line-right0 div span{
+                font-size: 30px;
+            }
+        }
+        @media screen and (max-width:749px){
+            #xianlus1{
+                width: 100%;
                 height: 70px;
                 border-bottom: 1px solid #e8e8e8;
                 margin: 0 auto;
-                padding-top: 15px;
-            }
-            #xianlus{
+                padding-top: 10px;
                 display: block;
+                background-color: #fff;
+                padding-left: 8%;
+            }
+            #xianlu1{
+                display: none;
             }
             #xianlu{
-                display: none;
+                width: 100%;
+                height: 900px;
             }
-            
-            #qianzhengs{
+            #xianlu2{
+                height:970px;
                 width: 100%;
                 background-color: #fff;
-                height: 672px;
-                margin-top: 10px;
             }
-            .qianzhengss{
-                width: 85%;
-                height: 672px;
+            #line2{
+                width: 95%;
+                margin: 0 auto;
+                height: 970px;
             }
-            .qianzhengs1{
-                width: 85%;
+            .line-left0{
+                position: relative;
+                border-top: 20px solid #fff;
+                overflow: hidden;
+            }
+            .line-left0 img{
+                width: 100%;
+                height: 390px;
+            }
+            .line-left0 div{
+                padding-top: 23px;
+                padding-left: 15px;
+                padding-right: 25px;
+                position: absolute;
+                height: 115px;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                font-size: 24px;
+                background: #000;
+                color: #fff;
+                opacity: 0.8;  
+            }
+            .line-left0 div span{
+                font-size: 38px;
+            }
+            .line-left01{
+                width: 320px;
+                float: left;
+            }
+            .line-left02{
+                font-size: 20px;
+                float: right;
+            }
+            .line-left1{
+                width: 230px;
+                padding-top: 30px;
+                margin: 0 auto;
+            }
+            .line-left1 button{
+                font-size: 28px;
+                color: #666666;
+                background: #fff;
+                width: 230px;
+                height: 60px;
+                border-radius: 5px;
+                border: 1px #666666 solid;
+            }
+            #line-right{
+                display: none;
+            }
+        }
+        @media screen and (min-width:749px){
+            #qianzheng{
+                width: 100%;
+                height: 1200px;
+            }
+            .qianzheng3{
+                width: 100%;
+                height: 350px;
+                margin: 0 auto;
+            }
+            #qianzheng1{
+                width: 100%;
+                height: 100px;
+                color: #000;
+                font-size: 80%;
+                text-align: center;
+                display: block;
+            }
+            #qianzhengs1{
+                display: none;
+            }
+            #qianzheng2{
+                width: 100%;
+                height: 740px;
+                margin: 0 auto;
+            }
+            #reco2{
+                width: 100%;
+                margin: 0 auto;
+                padding: 0;
+                margin: 0;
+            }
+            #reco21 div{
+                height:70px;
+            }
+            .reco23{
+                position: relative;
+                overflow: hidden;
+                border-top:4px solid #e8e8e8;
+            }
+            .reco23 div{
+                position: absolute;
+                bottom: 0;
+                height: 45px;
+                width: 100%;
+                opacity: 0.5;
+                color: #fff;
+                background: #000;
+                text-align: center;
+                line-height: 45px;
+                font-size: 20px;
+            }
+            .reco3 button{
+                color: #000;
+                background: #dddddd;
+                border: 1px #000 solid;
+            }
+        }
+        #reco21{
+            position: relative;
+            overflow: hidden;
+        }
+        #reco21 div{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            opacity: 0.5;
+            color: #fff;
+            background: #000;
+            text-align: center;
+            line-height: 45px;
+            font-size: 20px;
+        }
+        .reco22{
+            position: relative;
+            overflow: hidden;
+            border-top:4px solid #e8e8e8;
+        }
+        .reco22 div{
+            position: absolute;
+            bottom: 0;
+            height: 45px;
+            width: 100%;
+            opacity: 0.5;
+            color: #fff;
+            background: #000;
+            text-align: center;
+            line-height: 45px;
+            font-size: 20px;
+        }
+        .font9{
+            font-size: 30px;
+        }
+        .reco3{
+            width: 30%;
+            padding-top: 30px;
+            margin: 0 auto;
+        }
+        .reco3 button{
+            font-size: 26px;
+            width: 100%;
+            height: 60px;
+            border-radius: 10px;
+        }
+        @media screen and (max-width:749px){
+            #qianzheng{
+                width: 100%;
+                height: 560px;
+                margin-top: 100px;
+            }
+            .qianzheng3{
+                display: none;
+            }
+            #qianzhengs1{
+                width: 100%;
                 height: 70px;
                 border-bottom: 1px solid #e8e8e8;
+                border-top: 10px solid #e8e8e8;
                 margin: 0 auto;
-                padding-top: 15px;
-            }
-            #qianzhengs{
+                background-color: #fff;
                 display: block;
+                padding-left: 8%;
             }
-            #qianzheng{
+            #qianzheng1{
                 display: none;
             }
-
-            #shimings{
+            #qianzheng2{
                 width: 100%;
+                height: 570px;
                 background-color: #fff;
-                height: 1830px;
-                margin-top: 10px;
+                margin: 0 auto;
+                padding-top: 15px;
+                padding-left:0;
+                padding-right: 0;
+                margin-right: 0;
+
             }
-            .shimingss{
-                width: 85%;
-                height: 1830px;
+            #reco2{
+                width: 95%;
+                margin: 0 auto;
+                margin: 0;
+                padding: 0;
             }
-            .shimings1{
-                width: 85%;
+            #reco21 div{
+                height: 50px;
+            }
+            #reco21 img{
+                width: 100%;
+            }
+            .reco22 img{
+                width: 100%;
+            }
+            .reco23{
+                display: none;
+            }
+            .reco3 button{
+                color: #666666;
+                background: #fff;
+                border: 1px #666666 solid;
+            }
+            .font10{
+                display: none;
+            }
+        }
+        @media screen and (max-width:749px){
+            #shiming{
+                width: 100%;
+                /* height: 1830px; */
+                background-image: url(img/back.png);
+                background-size:100% 700px;
+                background-repeat: no-repeat;
+            }
+            #shimings1{
+                width: 100%;
                 height: 80px;
+                background-color: #fff;
                 border-bottom: 1px solid #e8e8e8;
                 margin: 0 auto;
-                padding-top: 15px;
-            }
-            #shimings{
+                padding-top: 16px;
                 display: block;
+                padding-left: 8%;
             }
-            #shiming{
+            #shiming1{
                 display: none;
             }
+            .shiming2{
+                width: 100%;
+                height: 100px;
+            }
+            .shiming211{
+                color: #000;
+                text-align: center;
+                height: 40%;
+                width: 90%;
+                margin-top: 5%;
+                margin-left: 20%;
+                text-align: center;
+                display: block;
+                margin: 0 auto;
+            }
+            .shiming21{
+                display: none;
+            }
+        }
+        @media screen and (min-width:749px){
+            #shiming{
+                width: 100%;
+                height: 1300px;
+                background-image: url(img/back.png);
+                background-size:100% 700px;
+                background-repeat: no-repeat;
+            }
+            #shiming1{
+                width: 100%;
+                height: 100px;
+                color: #000;
+                font-size: 80%;
+                text-align: center;
+                display: block;
+            }
+            #shimings1{
+                display: none;
+            }
+            .shiming2{
+                
+                width: 95%;
+                margin: 0 auto;
+            }
+            .shiming21{
+                color: #fff;
+                text-align: center;
+                height: 40%;
+                width: 70%;
+                margin-top: 10%;
+                margin-left: 20%;
+                text-align: left;
+                display: block;
+            }
+            .shiming211{
+                display: none;
+            }
+            .shiming20{
+                width: 100%;
+                height: 100%;
+            }
+            .shiming22{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            #w1{
+                padding-right: 0;
+                height: 350px;
+            }
+            #w2{
+                padding-left: 0;
+                background-color: #14316d;
+                height: 350px;
+                width: 57%;
+            }
+        }
+        @media screen and (max-width:749px){
+            .blue1{
+            display: none;
+        }
+        .blue1-zi{
+            width: 25%;
+            height: 40px;
+            margin: 0 auto;
+            font-size: 22px;
+            margin-top: 40px;
+        }
+        .blue1{
+            display: none;
+        }
+        .blue2{
+            width: 89%;
+            height: 540px;
+            margin: 0 auto;
+            margin-bottom: 70px;
+        }
+        .blue21{
+            height: 185px;
+            border-bottom-style: solid;
+            border-bottom-color: #e8e8e8;
+        }
+        .blue21-img{
+            width: 33%;
+            float: left;
+            height: 185px;
+        }
+        .blue21-img img{
+            margin-left: 30%;
+            margin-top: 30%;
+        }
+        .blue21-zi{
+            width: 58%;
+            height: 186px;
+            float: left;
+            padding-top: 10%;
+          
+            font-size: 18px;
+        }
+        }
+        @media screen and (min-width:749px){
+            .blue1{
+        width: 95%;
+        height: 400px;
+        margin: 0 auto;
+        background-color: #1c5080;
+    }
+    .blue1-zi{
+        display: none;
+    }
+    .blue11{
+        width: 25%;
+        height: 300px;
+        margin-left: 5%;
+        padding-top: 35px;
+        float: left;
+    }
+    .blue1s{
+        width: 62%;
+        height: 186px;
+        
+        margin-left: 27%;
+        background-image: url("img/rorate.png");
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+        background-size: 100%;
+    }
+    .blue1s img{
+        width: 32%;
+        margin-top: 27%;
+        margin-left: 33%;
+    }
+    .blue1s>p{
+        color:#fff;
+        margin-top:8%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .blue11>p{
+        font-size: 14px;
+        color: #fff;
+
+    }
+    .blue2{
+        display: none;
+    }
         }
     </style>
 </head>
@@ -710,6 +1115,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" id="su" >快速定制</button>
                     <a style="margin-right: 30px; margin-left: 50px"><img src="img/logo.png" alt="" style="padding-top:5px;"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="col-1">
@@ -800,61 +1206,227 @@
                 </div>
             </div>
             <div id="xianlu">
-                <div class="xianlu1">
+                <div id="xianlu1">
                     <h3>热门线路</h3>
                     <p>Popular tourist routes</p>
                 </div>
-                <div class="xianlu2"></div>
-            </div>
-            <div id="xianlus">
-                <div class="xianluss">
-                    <div class="xianlus1">
-                        <h3>
-                            <span style="color: #e8420a">|</span>
-                            &nbsp;热门线路
-                        </h3>
-                    </div>
-                    <div class="xianlus2"></div>
+                <div id="xianlus1">
+                    <h3>
+                        <span style="color: #e8420a">|</span>
+                        &nbsp;热门线路
+                    </h3>
+                </div>
+                <div id="xianlu2">
+                        <div class="container">
+                                <div id="line2" class="row">
+                                    <div id="line-left" class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="line-left0">
+                                            <img src="img/hot1.jpg">
+                                            <div>
+                                                <p class="line-left01">海南三亚5天4晚，纯玩、4晚红树林度假王国</p>
+                                                <p class="line-left02">¥<span>2580</span>／人起</p>
+                                            </div>
+                                        </div>
+                                        <div class="line-left0">
+                                            <img src="img/hot2.jpg">
+                                            <div>
+                                                <p class="line-left01">德法意瑞欧洲4国，ABCD任意线路由您挑选</p>
+                                                <p class="line-left02">¥<span>7999</span>／人起</p>
+                                            </div>
+                                        </div>
+                                        <div class="line-left1">
+                                            <button>查看更多  ></button>
+                                        </div>
+                                    </div>
+                                    <div id="line-right" class="col-md-6 col-sm-6">
+                                        <div class="line-right0">
+                                            <img src="img/hot3.jpg">
+                                            <div>
+                                                <p>曼谷+芭提雅 国际五星，赠送2220大礼包，绝无自费</p>
+                                                <p>¥<span>2799</span>／人起</p>
+                                            </div>
+                                        </div>
+                                        <div class="line-right0">
+                                            <img src="img/hot4.jpg">
+                                            <div>
+                                                <p>日本本州游 樱花、寿司、温泉、美食国</p>
+                                                <p>¥<span>5399</span>／人起</p>
+                                            </div>
+                                        </div>
+                                        <div class="line-right0"> 
+                                            <img src="img/hot5.jpg">
+                                            <div>
+                                                <p>斯里兰卡7天6晚全景游&nbsp;&nbsp;&nbsp;保证入住2晚香格里拉</p>
+                                                <p>¥<span>7999</span>／人起</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                 </div>
             </div>
             <div id="qianzheng">
-                <div class="qianzheng1">
+                <div id="qianzheng1">
                     <h3>签证推荐</h3>
                     <p>Visa recommendation</p>
                     <p>热门：日本 马来西亚 美国 意大利 加拿大 新加坡</p>
                 </div>
-                <div class="qianzheng2"></div>
-                <div class="qianzheng3"></div>
-                <div class="qianzheng4"></div>
-            </div>
-            <div id="qianzhengs">
-                <div class="qianzhengss">
-                    <div class="qianzhengs1">
-                        <h3>
-                            <span style="color: #e8420a">|</span>
-                            &nbsp;签证推荐
-                        </h3>
+                <div id="qianzhengs1">
+                    <h3>
+                        <span style="color: #e8420a">|</span>
+                        &nbsp;签证推荐
+                    </h3>
+                </div>
+                <div id="qianzheng2">
+                    <div class="container" >
+                        <div id="reco2" class="row" style="margin:0; padding:0">
+                            <div class="col-md-4 col-sm-4 col-xs-6" style="margin-left: 0; margin-right:0;padding-left:4px">
+                                <div id="reco21">
+                                    <img src="img/visa1.jpg">
+                                    <div>
+                                        <p>日本旅游签证  ￥<span class="font9">420</span><span class="font10">/人</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-6" style="margin-left: 0; margin-right:0; padding-left:4px">
+                                <div class="reco22">
+                                    <img src="img/visa2.jpg">
+                                    <div>
+                                        <p>新加坡旅游签证  ￥<span class="font9">370</span><span class="font10">/人</span></p>
+                                    </div>
+                                </div>
+                                <div class="reco23">
+                                    <img src="img/visa3.jpg">
+                                    <div>
+                                        <p>申根旅游签证  ￥<span class="font9">999</span><span class="font10">/人</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-6" style="margin-left: 0; margin-right:0;padding-left:4px">
+                                <div class="reco23">
+                                    <img src="img/visa4.jpg">
+                                    <div>
+                                        <p>马来西亚旅游签证  ￥<span class="font9">450</span><span class="font10">/人</span></p>
+                                    </div>
+                                </div>
+                                <div class="reco22">
+                                    <img src="img/visa5.jpg">
+                                    <div>
+                                        <p>美国旅游签证  ￥<span class="font9">1380</span><span class="font10">/人</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reco3">
+                            <button>查看更多 ></button>
+                        </div>          
                     </div>
-                    <div class="qianzhengs2"></div>
+                </div>
+                <div class="qianzheng3">
+                    <img src="img/Bbanner.jpg" alt="" class="img-responsive" width="100%" height="100%">
                 </div>
             </div>
             <div id="shiming">
-                <div class="shiming1">
+                <div id="shiming1">
                     <h3>使命与愿景</h3>
                     <p>让旅游回归本质，体验纯粹旅游</p>
                 </div>
-                <div class="shiming2"></div>
-            </div>
-            <div id="shimings">
-                <div class="shimingss">
-                    <div class="shimings1">
-                        <h3>
-                            <span style="color: #e8420a">|</span>
-                            使命与愿景
-                            <span style="font-size:14px">：让旅游回归本质，体验纯粹旅游</span>
-                        </h3>
+                <div id="shimings1">
+                    <h3>
+                        <span style="color: #e8420a">|</span>
+                        使命与愿景
+                        <span style="font-size:14px">：让旅游回归本质，体验纯粹旅游</span>
+                    </h3>
+                </div>
+                <div class="shiming2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-12" id="w1">
+                                <div class="shiming20">
+                                    <img src="img/mission1.jpg" alt="" style="width: 100%; height: 100%;">
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-sm-7 col-xs-12" id="w2">
+                                <div class="shiming21">
+                                    <p style="font-size: 20px; text-align: center; margin-bottom: 10%;">服务理念及优势</p>
+                                    <p> “英华逸游” 通过重新打造旅游全程中的产品线路设计、出行交通方案、</p>
+                                    <p>陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸</p>
+                                    <p>游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提</p>
+                                    <p>供性价比高的产品和服务。</p>
+                                </div>
+                                <div class="shiming211">
+                                    <p style="font-size: 20px; text-align: center; margin-top: 10%;">--服务理念--</p>
+                                    <p> “英华逸游” 通过重新打造旅游全程中的产品线路设计、出行交通方案、</p>
+                                    <p>陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸</p>
+                                    <p>游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提</p>
+                                    <p>供性价比高的产品和服务。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="shiming22">
+                                    <img src="img/mission2.jpg" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="shimings2"></div>
+                    <div class="blue1">
+                            <div class="blue11"style="margin-left:5%;">
+                                <div class="blue1s">
+                                    <img src="img/icon1.png"/>
+                                    <p>品质行程</p>
+                                </div>
+                                <p style="margin-left: 10%;color: #18366e;">旅游达人精心设计，基于口碑反复打磨，</p>
+                                <p style="margin-left: 20%; color: #18366e;">全网最好，敢跟任何产品比</p>
+                            </div>
+                            <div class="blue11">
+                                <div class="blue1s">
+                                    <img src="img/icon2.png" style="margin-top: 22%;"/>
+                                    <p>品质消费</p>
+                                </div>
+                                <p style="margin-left: 45%;">不推自费，</p>
+                                <p style="margin-left: 30%; ">不进垃圾购物店和伪景点</p>
+                            </div>
+                            <div class="blue11">
+                                <div class="blue1s">
+                                    <img src="img/icon3.png"/>
+                                    <p>品质小团</p>
+                                </div>
+                                <p style="margin-left: 40%;">独立成团不散拼，</p>
+                                <p style="margin-left: 25%; ">只跟亲朋好友一起玩，每天发团</p>
+                            </div>
+                        </div>
+                        <div class="blue2">
+                            <div class="blue21">
+                                <div class="blue21-img">
+                                    <img src="img/icon11.png"/>
+                                </div>
+                                <div class="blue21-zi">
+                                    <p>旅游达人精心设计，基于口碑反复打磨，</p>    
+                                    <p>告别人山人海鸡肋景点</p>                
+                                    <p>全网最好，敢跟任何产品比</p>
+                                </div>
+                            </div>
+                            <div class="blue21">
+                                <div class="blue21-img">
+                                    <img src="img/icon22.png"/>
+                                </div>
+                                <div class="blue21-zi">
+                                    <p>不推自费，</p>    
+                                    <p>不进垃圾购物店和伪景点</p>                
+                                </div>
+                            </div>
+                            <div class="blue21">
+                                <div class="blue21-img">
+                                    <img src="img/icon33.png"/>
+                                </div>
+                                <div class="blue21-zi">
+                                    <p>独立成团不散拼，</p>    
+                                    <p>只跟亲朋好友一起玩，每天发团</p>                
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
